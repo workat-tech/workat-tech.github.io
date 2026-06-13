@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link rel="preconnect" href="https://www.google-analytics.com/" crossorigin=""><link rel="preconnect" href="https://connect.facebook.net/" crossorigin=""><link rel="preconnect" href="https://d2yjqys1j7uhg1.cloudfront.net/" crossorigin=""><link rel="preconnect" href="https://identitytoolkit.googleapis.com/" crossorigin=""><link rel="preconnect" href="https://www.googleapis.com/" crossorigin=""><link rel="preconnect" href="https://apis.googleapis.com/" crossorigin=""><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="keywords" content="product-based,company,job,startup,faang,big tech,amazon,google,microsoft,apple,uber,flipkart,adobe,directi,tower research,facebook,netflix,swiggy,mindtickle,product companies,product based,razorpay,unacademy,phonepe,cred,zeta"><meta property="og:title" content="Top Product Based Companies in India"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Top Product Based Companies in India"><meta property="og:type" content="article"><meta property="og:image" content="https://workat.tech/images/blogs/mumbai-night-skyline.jpg"><meta property="twitter:image" content="https://workat.tech/images/blogs/mumbai-night-skyline.jpg"><meta property="og:description" content="This article will help you get to know the different product based companies. It hosts a list of 100 companies which has offices in India. "><meta property="twitter:description" content="This article will help you get to know the different product based companies. It hosts a list of 100 companies which has offices in India. "><meta property="twitter:site" content="@workat_tech"><meta property="twitter:url" content="https://workat.tech/general/article/top-product-based-companies-in-india-7xgxclagorak"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","author":{"name":"Aravind Venugopal","@type":"Person"},"name":"Top Product Based Companies in India","headline":"Top Product Based Companies in India","image":"https://workat.tech/images/blogs/mumbai-night-skyline.jpg","datePublished":"2021-12-09T14:10:05.000Z","dateModified":"2022-04-20T10:51:29.000Z","publisher":{"name":"https://workat.tech","@type":"Organization","logo":{"url":"https://workat.tech/images/workattech-large.png","@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://workat.tech/general/article/top-product-based-companies-in-india-7xgxclagorak"},"description":"This article will help you get to know the different product based companies. It hosts a list of 100 companies which has offices in India. "}</script><meta name="Description" content="This article will help you get to know the different product based companies. It hosts a list of 100 companies which has offices in India. "><link rel="preload" href="https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I9tAcVwo.woff2" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="https://fonts.gstatic.com/s/nunitosans/v5/pe03MImSLYBIv1o4X1M8cc9iB85tU1ECVZl_.woff2" as="font" type="font/woff2" crossorigin=""><meta name="google-site-verification" content="B3WY8P-6oQKREsOWNanJ3N45VvHnL3o-7I0LrRaUQiI"><title>Top Product Based Companies in India</title><link href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/main.dd86c244.chunk.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/4.7982883d.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/15.14a7d888.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/25.5d6174fe.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/7.ce2a2394.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/17.0ba28430.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/127.87458693.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/126.e60f011a.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/124.dc57a0ea.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/14.c04ed865.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/24.c04ed865.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/23.c04ed865.chunk.css"><link rel="stylesheet" type="text/css" href="https://d2yjqys1j7uhg1.cloudfront.net/static/css/3.368b319d.chunk.css"><link rel="canonical" href="/general/article/top-product-based-companies-in-india-7xgxclagorak/index.html"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div><div class="non-footer"><div><div class="header-placeholder"></div><div class="header-wrapper header-white header-fixed"><div class="section"><div class="header"><div class="header-box hamburger"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg></div><div class="logo-wrapper"><div class="header-logo"><a href="/index.html"><div><svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80"><path fill="#000000" transform="translate(11,18)" d="M23.55 16.77L26.14 16.77L20.35 32.35L17.86 32.35L13.47 20.29L9.06 32.35L6.59 32.35L0.80 16.77L3.49 16.77L7.90 29.28L12.42 16.77L14.66 16.77L19.10 29.28L23.55 16.77ZM35.62 32.58Q33.41 32.58 31.73 31.58Q30.05 30.59 29.14 28.75Q28.22 26.91 28.22 24.48L28.22 24.48Q28.22 22.05 29.14 20.21Q30.05 18.37 31.73 17.38Q33.41 16.38 35.62 16.38L35.62 16.38Q37.82 16.38 39.52 17.38Q41.22 18.37 42.13 20.21Q43.04 22.05 43.04 24.48L43.04 24.48Q43.04 26.91 42.13 28.75Q41.22 30.59 39.52 31.58Q37.82 32.58 35.62 32.58L35.62 32.58ZM35.62 30.43Q37.92 30.43 39.15 28.91Q40.38 27.39 40.38 24.48L40.38 24.48Q40.38 21.63 39.14 20.08Q37.89 18.53 35.62 18.53L35.62 18.53Q33.34 18.53 32.10 20.08Q30.85 21.63 30.85 24.48L30.85 24.48Q30.85 27.36 32.08 28.90Q33.31 30.43 35.62 30.43L35.62 30.43ZM55.52 16.38L55.74 18.62L54.05 18.78Q51.65 19.01 50.58 20.29Q49.50 21.57 49.50 23.46L49.50 23.46L49.50 32.35L46.91 32.35L46.91 16.77L49.44 16.77L49.44 19.49Q50.75 16.77 54.59 16.45L54.59 16.45L55.52 16.38ZM72.10 32.35L68.74 32.35L60.80 24.90L60.80 32.35L58.21 32.35L58.21 9.79L60.80 9.79L60.80 23.84L68.06 16.80L71.36 16.80L63.62 24.26L72.10 32.35Z"></path><circle cx="21" cy="21" r="21" transform="translate(85,19)" fill="#276ef1"></circle><path fill="#ffffff" transform="translate(94,21)" d="M12.35 30.29Q8.97 30.29 6.45 28.91Q3.93 27.53 2.56 25.03Q1.20 22.52 1.20 19.27L1.20 19.27Q1.20 15.78 2.65 13.18Q4.11 10.58 6.66 9.19Q9.20 7.80 12.38 7.80L12.38 7.80Q15.73 7.80 18.12 9.13Q20.51 10.45 21.74 12.65Q22.96 14.85 22.96 17.37L22.96 17.37Q22.96 19.84 22.22 21.46Q21.48 23.09 20.28 23.86Q19.08 24.62 17.68 24.62L17.68 24.62Q16.30 24.62 15.50 24.02Q14.69 23.43 14.56 22.36L14.56 22.36L14.51 22.36Q13.10 24.62 10.63 24.62L10.63 24.62Q8.87 24.62 7.79 23.40Q6.71 22.18 6.71 20.05L6.71 20.05Q6.71 18.25 7.40 16.70Q8.09 15.16 9.33 14.23Q10.58 13.31 12.19 13.31L12.19 13.31Q13.39 13.31 14.27 13.86Q15.16 14.40 15.44 15.29L15.44 15.29L15.50 15.29L15.78 13.60L17.78 13.60L16.59 20.38Q16.48 21.16 16.48 21.37L16.48 21.37Q16.48 22.23 16.86 22.61Q17.24 22.98 18.04 22.98L18.04 22.98Q18.72 22.98 19.41 22.43Q20.10 21.87 20.57 20.61Q21.03 19.34 21.03 17.37L21.03 17.37Q21.03 15.29 20.06 13.52Q19.08 11.75 17.13 10.67Q15.18 9.59 12.38 9.59L12.38 9.59Q9.75 9.59 7.67 10.75Q5.59 11.91 4.41 14.11Q3.22 16.30 3.22 19.27L3.22 19.27Q3.22 22.05 4.32 24.13Q5.41 26.21 7.48 27.34Q9.54 28.47 12.35 28.47L12.35 28.47Q14.46 28.47 15.99 27.90Q17.52 27.33 18.33 26.29L18.33 26.29L20.98 26.29Q19.89 28.13 17.65 29.21Q15.42 30.29 12.35 30.29L12.35 30.29ZM11.08 22.98Q12.30 22.98 13.18 22.24Q14.07 21.50 14.52 20.31Q14.98 19.11 14.98 17.81L14.98 17.81Q14.98 16.43 14.31 15.70Q13.65 14.98 12.51 14.98L12.51 14.98Q11.34 14.98 10.48 15.70Q9.62 16.43 9.18 17.59Q8.74 18.75 8.74 19.99L8.74 19.99Q8.74 21.42 9.39 22.20Q10.04 22.98 11.08 22.98L11.08 22.98Z"></path><path fill="#000000" transform="translate(129,18)" d="M9.25 30.50Q9.95 30.50 10.66 30.40L10.66 30.40L10.53 32.45Q9.79 32.58 8.93 32.58L8.93 32.58Q6.11 32.58 4.69 31.10Q3.26 29.63 3.26 27.01L3.26 27.01L3.26 18.82L0.22 18.82L0.22 16.77L3.26 16.77L3.26 12.03L5.86 12.03L5.86 16.77L10.27 16.77L10.27 18.82L5.86 18.82L5.86 26.82Q5.86 30.50 9.25 30.50L9.25 30.50ZM26.34 24.00L26.34 24.96L14.94 24.96Q15.07 27.68 16.42 29.07Q17.76 30.46 20.22 30.46L20.22 30.46Q22.94 30.46 25.22 28.61L25.22 28.61L26.08 30.50Q25.06 31.46 23.46 32.02Q21.86 32.58 20.19 32.58L20.19 32.58Q16.54 32.58 14.45 30.43Q12.35 28.29 12.35 24.51L12.35 24.51Q12.35 22.11 13.28 20.27Q14.21 18.43 15.89 17.41Q17.57 16.38 19.71 16.38L19.71 16.38Q22.82 16.38 24.58 18.42Q26.34 20.45 26.34 24.00L26.34 24.00ZM19.74 18.40Q17.70 18.40 16.46 19.68Q15.23 20.96 15.01 23.30L15.01 23.30L24.06 23.30Q24 20.93 22.88 19.66Q21.76 18.40 19.74 18.40L19.74 18.40ZM36.74 32.58Q34.43 32.58 32.74 31.58Q31.04 30.59 30.13 28.78Q29.22 26.98 29.22 24.54L29.22 24.54Q29.22 22.11 30.16 20.27Q31.10 18.43 32.82 17.41Q34.53 16.38 36.83 16.38L36.83 16.38Q38.40 16.38 39.90 16.94Q41.41 17.50 42.34 18.43L42.34 18.43L41.47 20.35Q39.26 18.56 36.99 18.56L36.99 18.56Q34.59 18.56 33.25 20.13Q31.90 21.70 31.90 24.54L31.90 24.54Q31.90 27.36 33.25 28.90Q34.59 30.43 36.99 30.43L36.99 30.43Q39.26 30.43 41.47 28.64L41.47 28.64L42.34 30.56Q41.34 31.49 39.84 32.03Q38.34 32.58 36.74 32.58L36.74 32.58ZM53.31 16.38Q58.91 16.38 58.91 22.56L58.91 22.56L58.91 32.35L56.32 32.35L56.32 22.72Q56.32 20.54 55.47 19.55Q54.62 18.56 52.77 18.56L52.77 18.56Q50.62 18.56 49.34 19.87Q48.06 21.18 48.06 23.42L48.06 23.42L48.06 32.35L45.47 32.35L45.47 9.79L48.06 9.79L48.06 19.26Q48.83 17.86 50.19 17.12Q51.55 16.38 53.31 16.38L53.31 16.38Z"></path></svg></div></a></div></div><div class="header-navbar"><div class="header-navs"><div class="header-nav header-nav-programs"><div class="header-nav-item-programs" role="button" tabindex="0"><a href="/practice/index.html"><span>Practice</span><span class="header-dropdown-icon"></span></a></div><div class="header-programs-dropdown"><div id="program-options-dropdown"><div class="right-triangle program-right-triangle"></div><div class="program-options-list"><a href="/problem-solving/practice/index.html"><div class="program-options">Data Structures and Algorithms</div></a><a href="/machine-coding/practice/index.html"><div class="program-options">Machine Coding Round (LLD)</div></a><a href="/system-design/practice/index.html"><div class="program-options">System Design &amp; Architecture (HLD)</div></a><a href="/frontend-development/practice/index.html"><div class="program-options">Frontend UI Machine Coding</div></a></div></div></div></div><div class="header-nav header-nav-programs"><div class="header-nav-item-programs" role="button" tabindex="0"><a href="/resources/index.html"><span>Resources</span><span class="header-dropdown-icon"></span></a></div><div class="header-programs-dropdown"><div id="program-options-dropdown"><div class="right-triangle program-right-triangle"></div><div class="program-options-list"><a href="/general/index.html"><div class="program-options">Career Advice and Roadmaps</div></a><a href="/problem-solving/index.html"><div class="program-options">Data Structures and Algorithms</div></a><a href="/machine-coding/index.html"><div class="program-options">Machine Coding Round (LLD)</div></a><a href="/system-design/index.html"><div class="program-options">System Design &amp; Architecture (HLD)</div></a><a href="/backend-development/index.html"><div class="program-options">Backend Development</div></a><a href="/frontend-development/index.html"><div class="program-options">Frontend Development</div></a><a href="/project-ideas/index.html"><div class="program-options">Project Ideas for Software Developers</div></a><a href="/core-cs/index.html"><div class="program-options">Core Computer Science</div></a></div></div></div></div><div class="header-nav header-nav-programs"><div class="header-nav-item-programs" role="button" tabindex="0"><a href="/company/index.html"><span>Companies</span><span class="header-dropdown-icon"></span></a></div><div class="header-programs-dropdown"><div id="program-options-dropdown"><div class="right-triangle program-right-triangle"></div><div class="program-options-list companies-options-list"><a href="/jobs/index.html"><div class="program-options">SDE Jobs &amp; Internships</div></a><a href="/problem-solving/practice/companies/index.html"><div class="program-options">Interview Questions</div></a><a href="/compare/index.html"><div class="program-options">Compare Companies</div></a></div></div></div></div><div class="header-nav header-nav-programs"><div class="header-nav-item-programs" role="button" tabindex="0"><a href="/ide/index.html"><span>IDE</span><span class="header-dropdown-icon"></span></a></div><div class="header-programs-dropdown"><div id="ide-options-dropdown"><div class="right-triangle program-right-triangle"></div><div class="ide-options-list"><a href="/ide/index.html"><div class="ide-options">Online IDE</div></a><a href="/collab/ide/index.html"><div class="ide-options">Collaborative IDE</div></a></div></div></div></div><div class="header-nav login-box" role="button" tabindex="0">Login</div></div></div><div class="header-box"></div></div></div></div></div><div class="blog"><div class="header-with-image-wrapper-bg" style="background-image: url(&quot;https://d2yjqys1j7uhg1.cloudfront.net/images/blogs/mumbai-night-skyline.jpg&quot;);"><div class="header-with-image-wrapper"><div class="header-with-image-section header-with-image-content"><div class="header-with-image-main"><h1 class="header-with-image-title">Top Product Based Companies in India</h1><div class="blog-header-author"><div class="blog-author-small-wrapper"><div class="blog-author-small-img"><img alt="Aravind Venugopal" src="https://lh3.googleusercontent.com/a-/AOh14GgemnKFtc5GuTvTKZAxaJe0wgMUSzXF5D2wH_TQ=s96-c"></div><div class="blog-author-small-desc"><div class="blog-author-small-name">Aravind Venugopal</div><div class="blog-author-small-social"><a href="https://www.linkedin.com/in/Aravind1444" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="LinkedIn"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a><a href="https://twitter.com/AravindV1444" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Twitter"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></div></div></div></div></div></div></div></div><div class="section blog-main-part"><div class="blog-article-part"><div><div class="article-portion article-section"><div class="article-part"><div class="article-content"><div class="highlightable-html-content"><style>
+ol.pbc-article-company-list { padding-inline-start: 0px; }
+ol.pbc-article-company-list li { border: 1px solid black; padding: 10px 20px; margin-top: 28px; background-color: white; list-style-position: inside; }
+ol.pbc-article-company-list li::marker { font-size: 24px; font-weight: bold; }
+ol.pbc-article-company-list li h3 { display: inline; }
+</style>
+<div class="highlightable-html-content cke-content"><blockquote><p><i>There are a lot of product-based companies in India. The ‘Top 100 Product Based Companies in India’ article contains the list of those companies which have an office in India and gives a brief idea about what each of those companies does.</i></p></blockquote>
+<ol class="pbc-article-company-list">
+<li><h3><a target="_blank" href="/company/google/index.html"><strong>Google</strong></a></h3><p>Google is an American multinational technology company that specializes in Internet-related services and products. Their products/services include online advertising technologies, a search engine, cloud computing, software, and hardware. Their products are used by billions of customers across the world.</p></li>
+<li><h3><a target="_blank" href="/company/microsoft/index.html"><strong>Microsoft</strong></a></h3><p>Microsoft Corporation is an American multinational technology company with headquarters in Redmond. It develops, manufactures, licenses supports, and sells computer software, consumer electronics, personal computers, and related services. Microsoft's best-known software products are the Microsoft Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers.</p></li>
+<li><h3><a target="_blank" href="/company/apple/index.html"><strong>Apple</strong></a></h3><p>Apple is an American multinational technology company that specializes in consumer electronics, software, and online services. They offer a wide range of products/services in terms of hardware and software. It was founded in 1986 under Steve Jobs and now has more than 290000 employees across the world. Apple is the most valuable company across the world.</p></li>
+<li><h3><a target="_blank" href="/company/amazon/index.html"><strong>Amazon</strong></a></h3><p>Amazon is an American multinational technology company based in Seattle, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.</p><p>It is one of the ‘Big Five’ companies in the U.S. information technology industry, along with Google, Apple, Microsoft, and Facebook. The company has been referred to as ‘one of the most influential economic and cultural forces in the world’, as well as the world's one of the most valuable brand.</p></li>
+<li><h3><a target="_blank" href="/company/uber/index.html"><strong>Uber</strong></a></h3><p>Uber was born in 2008 and has grown into a global platform moving people and things in ever-expanding ways. Uber has gone from rides on four wheels to rides on two wheels to 18-wheel freight deliveries. From takeout meals to daily essentials to prescription drugs to just about anything you need at any time. From drivers with background checks to real-time verification to in-vehicle technology, Uber makes the passengers safer every single day. At Uber, the pursuit of reimagination is never finished, never stops, and is always just beginning.</p></li>
+<li><h3><a target="_blank" href="/company/coinbase/index.html"><strong>Coinbase</strong></a></h3><p>Coinbase is an American company that operates a cryptocurrency exchange platform. Coinbase operates remote-first and is a secure platform that makes it easy to buy, sell, and store cryptocurrencies like Bitcoin, Ethereum, and more. They <span style="color:rgb(10,11,13)">offer a trusted and easy-to-use platform for accessing the broader crypto economy.</span></p></li>
+<li><h3><a target="_blank" href="/company/linkedin/index.html"><strong>LinkedIn</strong></a><strong>&nbsp;</strong></h3><p>Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 800 million members worldwide, including executives from every Fortune 500 company, LinkedIn is the world's largest professional network. The company has a diversified business model with revenue coming from Talent Solutions, Marketing Solutions, Sales Solutions, and Premium Subscriptions products. Headquartered in Silicon Valley, LinkedIn has offices across the globe.</p><p>In December 2016, Microsoft completed its acquisition of LinkedIn, bringing together the world’s leading professional cloud and the world’s leading professional network.</p></li>
+<li><h3><a target="_blank" href="/company/goldman-sachs/index.html"><strong>Goldman Sachs</strong></a></h3><p>Goldman Sachs is a leading global financial institution that delivers a broad range of financial services across investment banking, securities, investment management, and consumer banking to a large and diversified client base that includes corporations, financial institutions, governments, and individuals. Founded in 1869, the firm is headquartered in New York and maintains offices in all major financial centers around the world.</p></li>
+<li><h3><a target="_blank" href="/company/twitter/index.html"><strong>Twitter</strong></a></h3><p>Twitter is an American microblogging and social networking service. The platform is widely used by a lot of people across the world and clocks around 190 million users per day. Twitter is an open service that’s home to a world of diverse people, perspectives, ideas, and information. Twitter was created by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams in March 2006. Twitter is one of the most used social media platforms and offers a set of features for the users to connect with others and share information.</p></li>
+<li><h3><a target="_blank" href="/company/stripe/index.html"><strong>Stripe</strong></a></h3><p>Stripe is a technology company that builds economic infrastructure for the internet. Businesses of every size - from new startups to public companies- use their software to accept online payments and run technically sophisticated financial operations in more than 100 countries. Stripe combines a payments platform with applications that put revenue data at the heart of business operations. Stripe helps new companies get started and grow their revenues, and established businesses accelerate into new markets and launch new business models.&nbsp;</p><p>Stripe works with financial institutions, regulators, payment networks, banks, and consumer wallets so as to make the processes easier for all the businesses that run on Stripe. It is one of the most valued startups across the world and the most valued in the United States.</p></li>
+<li><h3><a target="_blank" href="/company/flipkart/index.html"><strong>Flipkart</strong></a></h3><p>The Flipkart Group is one of India’s leading digital commerce entities and includes group companies Flipkart, Myntra, and Jabong. Launched in 2007, Flipkart has enabled millions of consumers, sellers, merchants, and small businesses to be a part of India’s e-commerce revolution. With a registered customer base of over 100 million, offering over 80 million products across 80+ categories,</p><p>Flipkart is known for pioneering services such as Cash on Delivery, No Cost EMI and easy returns – customer-centric innovations that have made online shopping more accessible and affordable for millions of Indians. Together with Myntra and Jabong, which hold prominent positions in the online fashion market, the Flipkart Group has steered the transformation of commerce in India through technology.</p></li>
+<li><h3><a target="_blank" href="/company/adobe/index.html"><strong>Adobe</strong></a></h3><p>Adobe is an American multinational computer software company and a global leader in digital media and digital marketing solutions. Their creative, marketing and document solutions empower people to bring digital creations to life and deliver immersive, compelling experiences to the right person at the right moment for the best results.</p></li>
+<li><h3><a target="_blank" href="/company/atlassian/index.html"><strong>Atlassian</strong></a></h3><p>Atlassian is an Australian software company that develops products for software developers, project managers, and other software development teams. Atlassian's flagship product is Jira. It also owns the popular Kanban-style project management software Trello.</p></li>
+<li><h3><a target="_blank" href="/company/d-e-shaw/index.html"><strong>D. E. Shaw</strong></a></h3><p>D. E. Shaw group is a pioneer in computational finance. The firm has more than 1900 people around the globe and an institutional-grade (and trip-proof) infrastructure. The D. E. Shaw group is trusted by investors across the world to manage their assets by seeking the optimal balance of risk and reward. While they're known as a pioneer in quantitative investing, they also have considerable expertise in areas that involve fundamental analysis or portfolio manager discretion. D. E. Shaw group uses a combination of quantitative and qualitative tools to uncover independent, hard-to-find sources of a return across global public and private markets.</p></li>
+<li><h3><a target="_blank" href="/company/directi/index.html"><strong>Directi</strong></a></h3><p>Directi comprises a group of tech businesses owned, operated, or invested in by Bhavin Turakhia and/or Divyank Turakhia. The Group brand is used by multiple business units that are run independently by their respective management teams, with similar cultures and opportunities.</p><p>Across these businesses, Directi employs 1600+ people across 8 offices, with over millions of customers and a group enterprise value of over $1.4 Billion. The company has invested in multiple category-leading global brands across business areas as diverse as web presence (domains, hosting, cloud-infrastructure), communication &amp; collaboration (voice and messaging), payments (benefits and compensation), and online advertising.</p></li>
+<li><h3><a target="_blank" href="/company/media-net/index.html"><strong>Media.net</strong></a></h3><p>Media.net is a leading global advertising company with one of the most comprehensive portfolios of advertising technology in the industry across search, native, display, mobile, local, products, and video. Media.net manages high-quality ad supply on over 500,000 websites and its platform and products are licensed by some of the largest publishers, ad networks, and other ad tech companies worldwide.</p><p>By market cap, Media.net is one of the Top 5 largest ad tech companies worldwide. By revenue, Media.net is the second-largest contextual advertising business worldwide.</p></li>
+<li><h3><a target="_blank" href="/company/zeta/index.html"><strong>Zeta</strong></a></h3><p>Zeta is in the business of providing a full-stack, cloud-native, API-first neo-banking platform including a digital core and a payment engine for issuance of credit, debit, and prepaid products that enable legacy banks and new-age fintech institutions to launch modern retail and corporate fintech products. Co-founded by Bhavin Turakhia and Ramki Gaddipati, Zeta currently provides its platform and products to BFSI issuers in India, Asia, and LATAM. Zeta’s products are used by banks like RBL Bank, IDFC First Bank, and Kotak Mahindra Bank, 14000 corporates and over 2 million users, and clocks over 1 million transactions per day.</p></li>
+<li><h3><a target="_blank" href="/company/intuit/index.html"><strong>Intuit</strong></a></h3><p>Intuit is an American global technology platform that helps our customers and communities overcome their most important financial challenges. Intuit serves millions of customers worldwide with TurboTax, QuickBooks, Mint, Credit Karma, and Mailchimp. Founded in 1983, it is rated as the best workplace continuously.</p></li>
+<li><h3><a target="_blank" href="/company/inmobi/index.html"><strong>InMobi</strong></a></h3><p>InMobi is the world's leading Marketing Cloud, driving real connections between brands and consumers. They create new paths for brands to understand, identify, engage and acquire consumers by leveraging our exclusive access to mobile intelligence and technology platforms.</p><p>InMobi offers products both for advertisers as well as for publishers. They also offer monetization tools for mobile apps, websites, and games. Apart from these, technology and products for growth are also offered as a part of the InMobi suite. InMobi is also the parent organization of <a target="_blank" href="/company/glance/index.html">Glance</a> and Roposo.</p></li>
+<li><h3><a target="_blank" href="/company/walmart-labs/index.html"><strong>Walmart Labs</strong></a></h3><p>Walmart Labs is a part of Walmart Global Tech which is a team of 15,000+ software engineers, data scientists, and service professionals within Walmart, the world’s largest retailer, delivering innovations that improve how customers shop and empower over 2.2 million associates. Walmart Labs develop solutions that help in increasing the efficiency and scale of the supply chain used by Walmart across the world.&nbsp;</p><p>The team builds reusable technology and products to drive differentiated experiences for our customers, manage our extensive catalog, and power the supply chain. They also build and manage the foundational technologies on which the tech organization is built – including cloud, data, enterprise architecture, DevOps, infrastructure, and security.</p></li>
+<li><h3><a target="_blank" href="/company/arcesium/index.html"><strong>Arcesium</strong></a></h3><p>Arcesium is a global financial technology and professional services firm, delivering solutions to some of the world's most sophisticated financial institutions, including hedge funds, banks, and institutional asset managers. Founded in 2011, it is based out of New York and has more than 1000 employees.</p></li>
+<li><h3><a target="_blank" href="/company/salesforce/index.html"><strong>Salesforce</strong></a></h3><p>Salesforce is an American, cloud-based customer relationship management (CRM) company. Salesforce now provides essential services to many of the world’s biggest and most critical businesses, governments, and organizations. They are the world’s #1 customer relationship management (CRM) platform and help companies in marketing, sales, commerce, service, and IT teams work as one from anywhere.</p><p>Over 150,000 companies across the world, both big and small, use the products offered by Salesforce for growing their business. The products of Salesforce are used in a lot of industries like Financial Services, Healthcare &amp; Life Sciences, Communications, Consumer Goods, Public Sector, Manufacturing, etc.</p></li>
+<li><h3><a target="_blank" href="/company/rubrik/index.html"><strong>Rubrik</strong></a></h3><p>Rubrik, the Zero Trust Data Security Company™, delivers data security and operational resilience for enterprises. Rubrik helps enterprises achieve data control to drive business resiliency, cloud mobility, and regulatory compliance. They are trusted by the world's leading companies and industry-leading partners.</p></li>
+<li><h3><a target="_blank" href="/company/nutanix/index.html"><strong>Nutanix</strong></a></h3><p>Nutanix is an American cloud software company and a pioneer in hyper-converged infrastructure solutions, making clouds invisible, freeing customers to focus on their business outcomes. Organizations around the world use Nutanix software to leverage a single platform to manage any app at any location for their hybrid multi-cloud environments.</p></li>
+<li><h3><a target="_blank" href="/company/rippling/index.html"><strong>Rippling</strong></a></h3><p>Rippling is the first way for businesses to manage all of their HR &amp; IT - payroll, benefits, computers, apps, and more - in one unified workforce platform.</p><p>By connecting every workforce system to a single source of truth for employee data, businesses can automate all of the manual work they normally need to do to make employee changes. Take onboarding, for example. With Rippling, you can just click a button and set up a new employees' payroll, health insurance, work computer, and third-party apps - like Slack, Zoom, and Office 365 - all within 90 seconds.</p></li>
+<li><h3><a target="_blank" href="/company/slack/index.html"><strong>Slack</strong></a></h3><p>Slack is the collaboration hub that brings the right people, information, and tools together to get work done. From FTSE 100 companies to corner shops, millions of people around the world use Slack to connect their teams, unify their systems and drive their business forwards.</p><p>It’s the leading channel-based messaging platform, used by millions to align their teams, unify their systems, and drive their businesses forward. Slack offers a secure, enterprise-grade environment that can scale with the largest companies in the world. It is a new layer of the business technology stack where people can work together more effectively, connect all their other software tools and services, and find the information they need to do their best work.</p></li>
+<li><h3><a target="_blank" href="/company/twilio/index.html"><strong>Twilio</strong></a></h3><p>Twilio is a Cloud Communications Platform as a Service company based in San Francisco, California. It allows software developers to programmatically make and receive phone calls, send and receive text messages, and perform other communication functions using its web service APIs (audio, video, etc).</p></li>
+<li><h3><a target="_blank" href="/company/tekion/index.html"><strong>Tekion</strong></a></h3><p>Tekion is building the world’s best business applications on the cloud starting with the automotive retail industry. They inherently use cutting-edge technologies like big data, machine learning/AI, and human-computer interaction (voice, touch, vision, sensors, and IoT). We are inventing new technology along the way to overcome barriers and solve big problems.</p><p>Tekion's flagship product offering, Automotive Retail Cloud™ is an industry-first cloud-native retail platform, including all functionalities of a Dealer Management System (DMS), and was launched recently.</p></li>
+<li><h3><a target="_blank" href="/company/github/index.html"><strong>GitHub</strong></a></h3><p>GitHub is a platform to share code with friends, co-workers, classmates, and complete strangers. Over 70 million people use GitHub to build amazing things together. With all the collaborative features of GitHub, it makes it easier for individuals and teams to write faster, better code. GitHub also allows users to host websites on the platforms as well as offers a suite of features that will help people deploy various applications.&nbsp;</p><p>GitHub also supports open-source projects/developers with various initiatives, students with communities, and a lot more. GitHub is currently the most used code hosting and collaboration tool with more than 73 million users, 4 million companies including 84% of Fortune 100 companies, and in total hosting more than 200 million repositories.</p></li>
+<li><h3><a target="_blank" href="/company/swiggy/index.html"><strong>Swiggy</strong></a></h3><p>Swiggy is India’s leading on-demand delivery platform with a tech-first approach to logistics and a solution-first approach to consumer demands. With a presence in 500 cities across India, partnerships with hundreds of thousands of restaurants, an employee base of over 5000, a 2 lakh+ strong independent fleet of Delivery Executives, Swiggy delivers an unparalleled convenience driven by continuous innovation. Swiggy started out as a hyperlocal food delivery service in 2014 to become a logistics hub of excellence today.</p></li>
+<li><h3><a target="_blank" href="/company/unacademy/index.html"><strong>Unacademy</strong></a></h3><p>Unacademy is an Indian educational technology company, based in Bangalore. It was originally started as a YouTube channel in 2010 by Gaurav Munjal. The company was officially founded in 2015. Unacademy is currently India’s largest online learning app.</p></li>
+<li><h3><a target="_blank" href="/company/cred/index.html"><strong>Cred</strong></a></h3><p>CRED is a members-only club that rewards individuals for their timely credit card bill payments by providing them with exclusive offers and access to premium experiences. It is a platform that allows credit card users to manage multiple cards along with an analysis of their credit score.</p></li>
+<li><h3><a target="_blank" href="/company/grab/index.html"><strong>Grab</strong></a></h3><p>Grab is Southeast Asia’s leading super app, offering a suite of services consisting of deliveries, mobility, financial services, enterprise, and others. They offer a wide range of services for consumers, merchants, and enterprises. Grab delivers food, groceries, and acts as an express connecting everything to the doorstep of users.</p><p>Grab also have financial services which include a payment platform for secure and seamless cashless payments, Insurance and Investment Services, etc. Grab is one of the fastest-growing and most innovative companies across the world.</p></li>
+<li><h3><a target="_blank" href="/company/phonepe/index.html"><strong>PhonePe</strong></a></h3><p>PhonePe is an Indian digital payments and financial services company based out of Bangalore, India. It was founded in 2015, by Sameer Nigam, Rahul Chari, and Burzin Engineer. The PhonePe app, based on the Unified Payments Interface, went live in August 2016. PhonePe offers a wide range of services for the common people as well as for businesses enhancing their payment experiences.&nbsp;</p><p>They also have additional features which will help people handle their finances by helping them in investing, paying for services. etc. PhonePe was acquired by Flipkart in 2016 and is India's one of the fastest-growing fintech companies.</p></li>
+<li><h3><a target="_blank" href="/company/sharechat/index.html"><strong>ShareChat</strong></a></h3><p>ShareChat is India’s leading social media platform that operates exclusively in Indic languages. ShareChat empowers over 160 million strong monthly active user community to share their opinions, record their lives and make new friends - all within the comfort of their language of choice.</p><p>They also own the short video platform Moj, which is today India's preferred short video destination with tens of millions of users from across the world. The platform has been designed for artists and creators to create innovative short video content and display their creativity to millions, globally.</p></li>
+<li><h3><a target="_blank" href="/company/razorpay/index.html"><strong>Razorpay</strong></a></h3><p>Razorpay is an Indian Fin-Tech startup that aims to revolutionize money management for online businesses by providing clean, developer-friendly APIs and hassle-free integration. RazorPay offers a fast, affordable and secure way for merchants, schools, e-commerce, and other companies to accept and disburse payments online, own a fully-functional current account, and avail of working capital loans.</p><p>Razorpay is the only payments solution in India that allows businesses to accept, process, and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, net banking, UPI, and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money, and PayZapp.</p></li>
+<li><h3><a target="_blank" href="/company/udaan/index.html"><strong>Udaan</strong></a></h3><p>Founded in 2016 with a vision to transform the trade ecosystem in the country leveraging technology, Udaan is India’s largest b2b eCommerce platform that is empowering small businesses through the power and scale offered by eCommerce. It has operations across categories including lifestyle, electronics, home &amp; kitchen, staples, fruits &amp; vegetables, FMCG, pharma, toys, and general merchandise. Udaan has over 3 million users, 1.7 million retailers, chemists, kirana shops, HoReCa, farmers, and 30,000 sellers on the platform across the country.&nbsp;</p><p>The platform enables supply chain &amp; logistics operations, which are based on sound technology, for daily delivery across 900 cities and 12,000 pin codes through udaanExpress. It enables financial products and trade credit services to small businesses, manufacturers, retailers, and buyers through udaanCapital to grow their business.</p><p>The platform’s SaaS offerings such as analysis of real-time marketing feedback through app data analytics enable brands and manufacturers to make well-informed decisions about product launches and testing of new products in different markets. While the app-based pricing system gives better pricing control, the product listing advertisements and in-app advertisements encourage manufacturers and wholesalers to reach their targeted, specific, and ready-to-purchase retailers on the platform.</p></li>
+<li><h3><a target="_blank" href="/company/meesho/index.html"><strong>Meesho</strong></a></h3><p>Meesho is India’s fastest-growing internet commerce company aiming to make eCommerce accessible to everyone. Meesho's vision is to enable 100 million small businesses in India, including individual entrepreneurs, to succeed online. Meesho is democratizing internet commerce by bringing a range of products and new customers online. What started, six years ago, as a reseller-focused platform enabling millions to sell online, has now emerged as a single ecosystem connecting sellers to consumers and entrepreneurs.</p></li>
+<li><h3><a target="_blank" href="/company/bharatpe/index.html"><strong>BharatPe</strong></a></h3><p>BharatPe is India's leading merchant payment company. It helps merchants accept payments from customers for free. It also offers fintech products like loans. It is a full-stack service app for merchants across small and medium businesses, offering loans, investments, insurance, and other financial services.<span style="background-color:rgb(255,255,255);color:rgb(33,37,41)"> </span>BharatPe was co-founded by Ashneer Grover and Shashvat Nakrani in 2018 with the vision to make financial inclusion a reality for Indian merchants.&nbsp;</p></li>
+<li><h3><a target="_blank" href="/company/cleartax/index.html"><strong>ClearTax</strong></a></h3><p>Cleartax is a fintech company helping individuals, tax practitioners and businesses do tax filings. For individuals, Cleartax offers IT returns filing, mutual fund investments, and expert assisted services. For tax professionals, Cleartax offers comprehensive GST, ITR, and TDS filing solutions. For small and large businesses, Cleartax's product suite covers GST, e-Waybill, e-Invoicing and a range of ClearTax managed services.</p></li>
+<li><h3><a target="_blank" href="/company/curefit/index.html"><strong>Cult.fit</strong></a></h3><p>cult.fit (formerly cure.fit or Curefit) is a health and fitness company offering digital and offline experiences across fitness, nutrition, and mental well-being. With the aim to make fitness fun and easy, cult. fit gives workouts a whole new meaning with a range of trainer-led, group workout classes. It makes workouts fun, daily food is healthy and tasty, mental fitness easy with yoga and meditation, and medical and lifestyle care hassle-free. Co-founded by Mukesh Bansal and Ankit in Nagori 2016, the company is headquartered in Bangalore, Karnataka.</p></li>
+<li><h3><a target="_blank" href="/company/dunzo/index.html"><strong>Dunzo</strong></a></h3><p>Dunzo is an all-in-one 24x7 delivery platform, that picks and delivers anything and everything within the city while guaranteeing super-quick deliveries. Dunzo offers services that include the delivery of packages, groceries, food, medicines, pet supplies, and more. Founded and headquartered in Bengaluru, Dunzo was incorporated in 2015. Dunzo started as a Whatsapp group and has consistently proved its mettle as a convenience app and has grown from strength to strength. Dunzo is now fully operational in 8 cities.</p></li>
+<li><h3><a target="_blank" href="/company/zomato/index.html"><strong>Zomato</strong></a></h3><p>Launched in 2010, Zomato is a technology platform that connects customers, restaurant partners, and delivery partners, serving their multiple needs. Customers use Zomato to search and discover restaurants, read and write customer-generated reviews and view and upload photos, order food delivery, book a table, and make payments while dining out at restaurants.&nbsp;</p><p>On the other hand, Zomato provides restaurant partners with industry-specific marketing tools which enable them to engage and acquire customers to grow their business while also providing a reliable and efficient last-mile delivery service. Zomato also operates a one-stop procurement solution, Hyperpure, which supplies high-quality ingredients and kitchen products to restaurant partners.</p></li>
+<li><h3><a target="_blank" href="/company/hotstar/index.html"><strong>Hotstar</strong></a></h3><p>Disney+&nbsp;Hotstar is an online video streaming platform owned by Novi Digital Entertainment Private Limited, a wholly-owned subsidiary of Star India Private Limited. Disney+&nbsp;Hotstar currently offers over 100,000 hours of TV content and movies across 9 languages, and every major sport covered live. Highly evolved video streaming technology and high attention to the quality of experience across devices and platforms, make Disney+&nbsp;Hotstar the most complete video destination for Over The Top (OTT) video consumers.</p></li>
+<li><h3><a target="_blank" href="/company/glance/index.html"><strong>Glance</strong></a></h3><p>Glance is a software company that delivers personalized content to the lock screens of smartphones. Glance is one of India’s largest lock screen platforms in India and Southeast Asia, enabling consumers to experience the internet on the lock screens of their smartphones. Glance's AI-powered personalization enables consumers to enjoy content, products, and services of their choice, all delivered in an intuitive and visually attractive format.&nbsp;</p><p>Funded by Google and Mithril Partners, Glance is an unconsolidated subsidiary of InMobi and has over 150 million daily active users in India, and an estimated 25 million in Southeast Asia.</p></li>
+<li><h3><a target="_blank" href="/company/myntra/index.html"><strong>Myntra</strong></a></h3><p>Myntra is India’s leading e-commerce company committed to making fashion and lifestyle products accessible to everyone. Myntra aims at providing a hassle-free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal. They create solutions that disrupt the ordinary and help make the world a happier, more fashionable place. From its beginnings as a customization company in 2007 to being Myntra has evolved to be the technology and fashion pioneers today.</p></li>
+<li><h3><a target="_blank" href="/company/acko/index.html"><strong>Acko</strong></a></h3><p>ACKO is India’s first and fastest-growing InsurTech company which makes buying and using insurance effortlessly. It was founded in 2016 by Mr. Varun Dua- a serial fintech entrepreneur who set simplicity, affordability, and innovation as its cornerstones. In a short span since its inception, Acko has partnered with major tech companies like Amazon, OYO, and Ola, and is renowned for its innovative insurance products.</p></li>
+<li><h3><a target="_blank" href="/company/make-my-trip/index.html"><strong>Make My Trip</strong></a></h3><p>MakeMyTrip is India’s one-stop travel shop that is transforming how Indians travel. Powered by technology, MMT is helping India go places with its wide array of products and services through its powerful portfolio of brands MakeMyTrip, Goibibo, and RedBus, catering to the needs of all Indian travelers. From cabs, buses, trains, flights to hotels, homestays, holiday packages, and more, MMT is catering to the ever-evolving needs of travelers across the spectrum.</p><p>MakeMyTrip's almost two-decade-long journey is shaped by the vision and entrepreneurial spirit of every ‘Go-Tripper’ who strives to make the experience of every traveler convenient, seamless, and distinctive. MMT is the home to some of the best travel ideas – and its growth is a testimony of their team’s passion and dedication to providing the widest range of choices and the finest travel solutions to customers.</p></li>
+<li><h3><a target="_blank" href="/company/paytm/index.html"><strong>Paytm</strong></a></h3><p>Paytm started the Digital Revolution in India. It went on to become India’s leading Payments App. Today, more than 20 Million merchants &amp; businesses are powered by Paytm to Accept Payments digitally. As of now, more than 300 million Indians use Paytm to pay at their stores. Paytm app is used to pay bills, do recharges, send money to friends &amp; family, Book movies &amp; travel tickets. With innovations to Financial services &amp; products in the pipeline, Paytm is moving towards its mission – to bring 500 million unserved and underserved Indians to the mainstream economy.</p></li>
+<li><h3><a target="_blank" href="/company/ola/index.html"><strong>Ola</strong></a></h3><p>Ola is India’s largest mobility platform and one of the world’s largest ride-hailing companies, serving 250+ cities across India, Australia, New Zealand, and the UK. The Ola app offers mobility solutions by connecting customers to drivers and a wide range of vehicles across bikes, auto-rickshaws, metered taxis, and cabs, enabling convenience and transparency for hundreds of millions of consumers and over 1.5 million driver-partners.</p><p>Ola’s core mobility offering in India is supplemented by its electric-vehicle arm, Ola Electric; India’s largest fleet management business, Ola Fleet Technologies and Ola Skilling, that aims to enable millions of livelihood opportunities for India's youth. With its acquisition of Ridlr, India’s leading public transportation app, and investment in Vogo, a dockless scooter sharing solution, Ola is looking to build mobility for the next billion Indians. Ola also extends its consumer offerings like micro-insurance and credit-led payments through Ola Financial Services and a range of owned food brands through India’s largest network of kitchens under its Food business.</p></li>
+<li><h3><a target="_blank" href="/company/gojek/index.html"><strong>Gojek</strong></a></h3><p>Gojek is a Super App. It’s one app for ordering food, commuting, digital payments, shopping, hyper-local delivery, and a dozen other products. It is Indonesia’s first and only decacorn. It's also the only Southeast Asian startup to be part of Fortune's list of 'Companies That Changed The World.'</p></li>
+<li><h3><a target="_blank" href="/company/oracle/index.html"><strong>Oracle</strong></a></h3><p>Oracle is a cloud technology company that provides organizations around the world with computing infrastructure and software to help them innovate, unlock efficiencies and become more effective. They also created the world’s first and only autonomous database to help organize and secure our customers’ data.</p><p>Oracle Cloud Infrastructure offers higher performance, security, and cost savings. It is designed so businesses can move workloads easily from on-premises systems to the cloud, and between cloud and on-premises and other clouds. Oracle Cloud applications provide business leaders with modern applications that help them innovate, attain sustainable growth, and become more resilient.&nbsp;</p></li>
+<li><h3><a target="_blank" href="/company/paypal/index.html"><strong>PayPal</strong></a></h3><p>Fueled by a fundamental belief that having access to financial services creates opportunity, PayPal is committed to democratizing financial services and empowering people and businesses to join and thrive in the global economy. Their open digital payments platform gives PayPal’s 325 million active account holders the confidence to connect and transact in new and powerful ways, whether they are online, on a mobile device, in an app, or in person. Through a combination of technological innovation and strategic partnerships, PayPal creates better ways to manage and move money and offers choice and flexibility when sending payments, paying, or getting paid.</p><p>Available in more than 200 markets around the world, the PayPal platform, including Braintree, Venmo, and Xoom, enables consumers and merchants to receive money in more than 100 currencies, withdraw funds in 56 currencies and hold balances in their PayPal accounts in 25 currencies.</p></li>
+<li><h3><a target="_blank" href="/company/samsung/index.html"><strong>Samsung</strong></a><strong>&nbsp;</strong></h3><p>Samsung is a global leader in technology, opening new possibilities for people everywhere. Through relentless innovation and discovery, they are transforming the worlds of TVs, smartphones, wearable devices, tablets, digital appliances, network systems, medical devices, semiconductors, and LED solutions. Samsung is also leading in the Internet of Things space through, among others, our Smart Home and Digital Health initiatives.</p><p>Since being established in 1969, Samsung has grown into one of the world’s leading technology companies, and become recognized as one of the top 10 global brands.</p></li>
+<li><h3><a target="_blank" href="/company/snapdeal/index.html"><strong>Snapdeal</strong></a></h3><p>Snapdeal is India's leading value e-commerce platform that has helped Indian e-commerce grow beyond just brands &amp; urban users. Nearly 80% of Snapdeal's users come from non-metro locations highlighting its deep reach across the length and breadth of the country. Snapdeal hosts a wide selection of good quality, value-priced merchandise across fashion, home, beauty &amp; personal care, general merchandise, and other categories. With more than 200 Mn app installations, it is one of India's top online shopping destinations.</p></li>
+<li><h3><a target="_blank" href="/company/urban-company/index.html"><strong>Urban Company</strong></a></h3><p>Urban Company is Asia's largest home services company. We are an all-in-one platform that helps users hire premium service professionals, from beauticians and masseurs to sofa cleaners, carpenters, and technicians. Since its inception, Urban Company has built a network of 40,000+ trained service professionals and served over 5 million customers across major metropolitan cities of India, Dubai, Abu Dhabi, Sydney, and Singapore. Urban Company provides a platform that allows skilled and experienced professionals to connect with users looking for specific services.</p></li>
+<li><h3><a target="_blank" href="/company/dreamsports/index.html"><strong>Dream Sports</strong></a></h3><p>Dream Sports is India’s leading sports technology company with brands such as Dream11, the world’s largest fantasy sports platform, FanCode, a premier digital sports platform that personalizes content and commerce for all sports fans, DreamX, a sports accelerator, DreamSetGo, a sports experiences platform, and DreamPay, a payment solutions provider. It has founded the Dream Sports Foundation to help and champion sportspeople and is an active member of the Federation of Indian Fantasy Sports, the nodal body for the Fantasy Sports industry in India.</p></li>
+<li><h3><a target="_blank" href="/company/mpl/index.html"><strong>MPL</strong></a></h3><p>Mobile Premier League (MPL), is India’s largest eSports and mobile gaming platform, with over 70+ games on its app on iOS and Android. MPL has also expanded to Indonesia and the US and is growing exponentially, with over 90 million users across the globe! MPL is headquartered in Bengaluru, with offices in Pune, Singapore, and Jakarta.</p><p>Mobile Premier League is backed by marquee investors such as Sequoia Capital, SIG, MDI, Moore Strategic Ventures, Composite Capital, Times Internet, Go-Ventures, Base Partners, etc, and is currently valued at $2.3 billion.</p></li>
+<li><h3><a target="_blank" href="/company/morgan-stanley/index.html"><strong>Morgan Stanley</strong></a></h3><p>Morgan Stanley is an American multinational investment bank that mobilizes capital to help governments, corporations, institutions, and individuals around the world achieve their financial goals. Morgan Stanley is a consistent industry leader in modern finance which continues to break new ground in advising, serving, and providing new opportunities for its clients.</p><p>Morgan Stanley is committed to maintaining the first-class service and high standard of excellence that have always defined the firm, which has more than 60,000 employees in 1,200 offices across 41 countries.</p></li>
+<li><h3><a target="_blank" href="/company/target/index.html"><strong>Target</strong></a></h3><p>Target is one of the world’s most recognized brands and one of America’s leading retailers. Target offers outstanding value, inspiration, innovation, and an exceptional guest experience that no other retailer can deliver. Target is committed to responsible corporate citizenship, ethical business practices, environmental stewardship, and generous community support. Since 1946, Target has given 5 percent of its profits back to the communities. Their goal is to work as one team to fulfill our unique brand promise to our guests, wherever and whenever they choose to shop.</p></li>
+<li><h3><a target="_blank" href="/company/browserstack/index.html"><strong>BrowserStack</strong></a></h3><p>BrowserStack is the world’s leading software testing platform powering over two million tests every day across 15 global data centers. They help Microsoft, Twitter, Barclays, Expedia, and over 25,000 customers deliver quality software at speed by moving testing to our Cloud.</p><p>BrowserStack's platform provides instant access to 3,000+ real mobile devices and browsers on a highly reliable cloud infrastructure that effortlessly scales as testing needs grow. With BrowserStack, Dev and QA teams can move fast while delivering an amazing experience for every customer.</p></li>
+<li><h3><a target="_blank" href="/company/expedia/index.html"><strong>Expedia</strong></a></h3><p>Expedia Group powers travel for everyone, everywhere through our global platform. Driven by the core belief that travel is a force for good, Expedia helps people experience the world in new ways and build lasting connections. They provide industry-leading technology solutions to fuel partner growth and success while facilitating memorable experiences for travelers.</p><p>Expedia hosts a lot of services including Trivago to help improve the user experience. Powered by more than 70+ terabytes of data and 20+ years of tech innovation, Expedia Group is one of the world’s largest travel platforms. With unrivaled knowledge of the industry and advanced tech innovation, Expedia has built a two-sided marketplace that allows them to filter through millions of different possibilities, for travelers and partners worldwide.</p></li>
+<li><h3><a target="_blank" href="/company/oyo/index.html"><strong>Oyo</strong></a></h3><p>OYO is a global platform that aims to empower entrepreneurs and small businesses with hotels and homes by providing full-stack technology products and services that aims to increase revenue and ease operations; bringing easy-to-book, affordable, and trusted accommodation to customers around the world. OYO offers 40+ integrated products and solutions to patrons who operate over 157K hotel and home storefronts in more than 35 countries including India, Europe, and Southeast Asia.</p><p>OYO operates a unique business model that helps its patrons transform fragmented, unbranded, and underutilized hospitality assets into branded, digitally-enabled storefronts with higher revenue generation potential and provides its customers with access to a broad range of high-quality storefronts at compelling price points.&nbsp;</p></li>
+<li><h3><a target="_blank" href="/company/delhivery/index.html"><strong>Delhivery</strong></a></h3><p>Delhivery is the largest and fastest-growing fully-integrated player in India by revenue in Fiscal 2021. They aim to build the operating system for commerce, through a combination of world-class infrastructure, logistics operations of the highest quality, and cutting-edge engineering and technology capabilities.</p><p>Since its inception, Delhivery's team has successfully fulfilled over 1 billion orders across India. They have built a nationwide network with a presence in every state, servicing over 17000 pin codes. 21 automated sort centers, 86 gateways, 80+ fulfillment centers, and a team of over 66000 people make it possible for us to deliver 24 hours a day, 7 days a week, 365 days a year.</p></li>
+<li><h3><a target="_blank" href="/company/blinkit/index.html"><strong>blinkit [Grofers]</strong></a></h3><p>Blinkit is India's #1 instant commerce platform. We pioneered the 10-minute delivery model in India and intend to take it across the country by the end of 2022. Over 10 million Indians shop on Blinkit for everything from grocery staples and vegetables to emergency supplies and electronics. Blinkit currently delivers over 1,00,000 orders every day and is aimed at bringing the future of commerce to everyone in India.</p></li>
+<li><h3><a target="_blank" href="/company/zerodha/index.html"><strong>Zerodha</strong></a></h3><p>Zerodha is an Indian financial services company that offers brokerage-free equity investments, retail, institutional broking, currencies, and commodities trading. Founded in 2010, the company is headquartered in Bangalore and has a presence in nine Indian cities. It is also an official member of NSE's consultative committee for growing business. They offer a host of products for the public for investing and managing finances. Zerodha is now India's biggest Stockbroker and is also debt-free.</p></li>
+<li><h3><a target="_blank" href="/company/groww/index.html"><strong>Groww</strong></a></h3><p>Groww is a Demat &amp; stock trading app that allows you to open a free Demat account &amp; trade BSE, NSE listed stocks in the share market at a low brokerage on the stock orders. It has enabled millions of Indians by providing them with an easier option for managing their finances. Groww helps users make their investment process easy, fast and transparent.</p></li>
+<li><h3><a target="_blank" href="/company/upstox/index.html"><strong>UpStox</strong></a></h3><p>Upstox is an online investment brand of RKSV Securities. It is a SEBI registered financial service provider. RKSV offers online stock trading, commodity trading, currency derivatives trading, mutual funds, and Demat accounts. Upstox offers a fast, reliable &amp; easy-to-use trading platform for traders in the Indian stock market.</p><p>Upstox offers low-cost trading services. The equity delivery (cash &amp; carry) trading is offered for free to the customer. No brokerage is charged for orders placed in this segment. It also provides an excellent trading platform and tools to its customers.</p></li>
+<li><h3><a target="_blank" href="/company/pinelabs/index.html"><strong>Pine Labs</strong></a></h3><p>Pine Labs offers a merchant platform that includes technology and financial solutions for merchants to help them in increasing their revenue, reduce the cost and complexity of running a business, and manage the risks involved. The company connects financial institutions and consumer brands to empower merchants to deliver value to their retail customers. Pine Labs and its technology platform power offline and online last-mile retail transactions, provide customer insights to merchants for targeted sales and offer risk-managed financial solutions for merchants’ business growth.</p></li>
+<li><h3><a target="_blank" href="/company/nobroker/index.html"><strong>NoBroker</strong></a></h3><p>NoBroker is India's first Proptech unicorn that offers a brokerage-free property search portal that connects house/property owners &amp; tenants/buyers directly by eliminating the middleman. NoBroker removes the information asymmetry that existed in the Indian marketplace and instead creates an environment for a free exchange of information that earlier brokerage.</p><p>NoBroker is a team of 2000 people driven by the passion to help you fulfill your real estate requirements, without any brokerage. NoBroker has worked tirelessly to remove all information asymmetry caused by brokers. We also enable owners &amp; tenants to interact with each other directly by using our technologically advanced platform.</p></li>
+<li><h3><a target="_blank" href="/company/pharmeasy/index.html"><strong>PharmEasy</strong></a></h3><p>Started with the sole purpose of making healthcare accessible and affordable to all, PharmEasy is India’s leading online healthcare aggregator in the country. PharmEasy helps patients connect with local pharmacy stores and diagnostic centers to fulfill their extensive medical needs. Their services ensure that everyone gets access to the best and most genuine health products, with the highest savings in the shortest time possible.</p><p>PharmEasy delivers medicines in 1000+ cities in India, covering 22000+ pin codes, and also offers diagnostic test services across the leading cities in India.</p></li>
+<li><h3><a target="_blank" href="/company/apna/index.html"><strong>Apna</strong></a></h3><p>Apna is a professional app for the rising workforce in India. It helps people to get connected with jobs in the blue-collar domain. Founded in 2019, it is India's number one app in that domain. The users can download their app to access various services offered by Apna, whereas the employers can make use of the web platform to post their openings for free. The services offered by Apna for the public include searching for job openings, applying for jobs, scheduling interviews, job alerts &amp; smart filters, learning English, Government exam preparation, and being a part of groups such as Business Group, etc. Holding more than 1.5 Lakh+ employers, Apna hosts crores of interviews online.</p></li>
+<li><h3><a target="_blank" href="/company/truecaller/index.html"><strong>Truecaller</strong></a></h3><p>Truecaller is the leading global platform for verifying contacts and blocking unwanted communication. It enables safe and relevant conversations between people and make it efficient for businesses to connect with consumers. Truecaller is on a mission to build trust in communication. Truecaller is an essential part of everyday communication for around 280 million active users, with half a billion downloads since launch and 30 billion unwanted calls identified and blocked. Headquartered in Stockholm, since 2009, Truecaller is a co-founder-led, entrepreneurial company, with a highly experienced management team.</p></li>
+<li><h3><a target="_blank" href="/company/gupshup/index.html"><strong>Gupshup</strong></a></h3><p>Gupshup enables better customer engagement through conversational messaging. Gupshup is the leading conversational messaging platform, powering over 6 billion messages per month. Across verticals, thousands of large and small businesses in emerging markets use Gupshup to build conversational experiences across marketing, sales, and support. Gupshup’s carrier-grade platform provides a single messaging API for 30+ channels, a rich conversational experience-building tool kit for any use case, and a network of emerging market partnerships across messaging channels, device manufacturers, ISVs, and operators. With Gupshup, businesses have made conversations an integral part of their customer engagement success.</p></li>
+<li><h3><a target="_blank" href="/company/hike/index.html"><strong>Hike</strong></a></h3><p>Hike is building a new social future at the intersection of Social, Gaming &amp; Crypto. The internet is in the middle of a significant transformation. Fuelled by the advancements in technology &amp; Web3, users can partake in the growth, and success of products &amp; communities they belong to, from the very beginning. Hike is building products for this next decade that is going to spawn a whole new social future. Hike’s latest round of funding came in August 2021, where they raised capital from the world’s best product innovators &amp; investors.</p></li>
+<li><h3><a target="_blank" href="/company/bigbasket/index.html"><strong>BigBasket</strong></a></h3><p>BigBasket is India’s largest online food and grocery store. With over 18,000 products and over 1000 brands in their catalog, you will find everything you are looking for. Right from fresh Fruits and Vegetables, Rice and Dals, Spices and Seasonings to Packaged products, Beverages, Personal care products, Meats, BigBasket has everything available. In this fast-paced world, BigBasket wants to make your grocery shopping easy and convenient so that no time is wasted in this process. BigBasket is owned by Tata Digital since 2021.</p></li>
+<li><h3><a target="_blank" href="/company/times-internet/index.html"><strong>Times Internet</strong></a></h3><p>Times Internet builds premium digital products that simplify and enhance the everyday lives of people. They are India’s largest digital products company with a presence in a wide range of categories across news, entertainment, marketplaces, and transactions. Many of their products are market leaders and iconic brands in their own right. TOI, ET, Cricbuzz, Gaana, MX Player, Dineout, Indiatimes, MensXP, iDiva, NBT, Gradeup among others are products that bring you closer to your interests and aspirations.</p></li>
+<li><h3><a target="_blank" href="/company/quikr/index.html"><strong>Quikr</strong></a></h3><p>Quikr, which now operates leading transaction marketplaces built on top of India’s largest classifieds platform, is India’s largest platform that is used by over 30 million unique users a month. It is present in 1200 cities in India and operates several large classifieds businesses across C2C, Cars, Education, Homes, Jobs, and Services.</p><p>Quikr is the only classifieds platform not just in India but globally to go in for verticalization. The change in strategy helped them go deeper into their key verticals. They also offer other services that aides to the buying and selling experience of the users.</p></li>
+<li><h3><a target="_blank" href="/company/cars24/index.html"><strong>CARS24</strong></a></h3><p>CARS24 is a tech-first organization looking to make inroads into the global auto-tech market in groundbreaking ways. They have taken a splintered used-vehicle market and turned it into a streamlined tech-driven one, with intuitive discovery mechanisms, collaborations with partners at the micro and macro levels, and constant innovation. The next-gen approach to the pre-owned automobile industry is offered at CARS24.</p><p>On the surface, CARS24 is a cutting-edge e-commerce platform, making the purchase and sale of used vehicles as easy as any other online transaction. Delving deeper, they are a global force in the auto industry, with connections to channel partners, auto dealers, refurbishers, garages, and auto experts in every country that they have a presence.</p></li>
+<li><h3><a target="_blank" href="/company/zenefits/index.html"><strong>Zenefits</strong></a></h3><p>Zenefits is an American company that offers cloud-based software as a service to companies for managing their human resources, with a particular focus on helping them with payroll and health insurance coverage. The Zenefits People Platform brings everything HR into one radically simple, single app. Their platform is designed to be comprehensive without being overly complex. It puts benefits, payroll, and HR access in the pockets and at the fingertips of employees.</p></li>
+<li><h3><a target="_blank" href="/company/upgrad/index.html"><strong>UpGrad</strong></a></h3><p>upGrad is South Asia's largest online higher education company providing programs in Data Science, Technology, Management, and Law, to students, working professionals, and enterprises. The programs offered by upGrad are designed and delivered in collaboration with top universities across the world.</p></li>
+<li><h3><a target="_blank" href="/company/payu/index.html"><strong>PayU</strong></a></h3><p>PayU, the payments, and fintech business of Proses, is a payment service provider to online merchants. They are a truly global company, operating in 50+ markets and home to 43 different nationalities. PayU successfully bridges the global and local gap by supplying ultimate global payment coverage with extensive local expertise and support.&nbsp;</p><p>As a Fintech innovator, PayU develops cutting-edge technologies to ensure that merchants benefit from the highest approval rates and can optimally expand their global reach. In India, PayU serves more than 4,50,000+ merchants with over 100+ payment methods and is the preferred payment partner for e-commerce merchants, including all leading e-commerce companies and a majority of airline businesses.</p></li>
+<li><h3><a target="_blank" href="/company/policybazaar/index.html"><strong>PolicyBazaar</strong></a></h3><p>PolicyBazaar is India's prominent online life insurance and general insurance aggregator. They are specialized in making comparative analyses of insurance products. The basis for the comparison is price, quality, and key benefits. PolicyBazaar has built strong relationships with all prominent public and private insurance companies across India. PolicyBazaar's partners are from life insurance, health insurance, car insurance, travel insurance, corporate insurance, and loan sectors.</p></li>
+<li><h3><a target="_blank" href="/company/coin-switch/index.html"><strong>CoinSwitch</strong></a></h3><p>CoinSwitch Kuber is a secure, user-friendly crypto trading platform for users in India, where they can buy 80+ cryptocurrencies like Bitcoin, Ethereum, Ripple, etc easily, at the best rate, with a variety of payment options being offered. The users can access the pooled liquidity of the leading cryptocurrency exchanges in India to get the best rate and trade instantaneously, after completing the KYC/AML procedures. CoinSwitch Kuber app is the best cryptocurrency exchange for Indians as it provides them a seamless user experience, through a simplistic user interface.</p></li>
+<li><h3><a target="_blank" href="/company/digit/index.html"><strong>Digit Insurance</strong></a></h3><p>Digit is a digital insurance company that is aimed at making the insurance process simple for people. It was started in 2016 and is India's first unicorn of 2021. Digit offers insurance solutions across verticals such as health, travel, businesses, vehicles, etc. Digit aims to simplify insurance products so that even a 15-year-old can comprehend them.</p></li>
+<li><h3><a target="_blank" href="/company/jpmorgan-chase/index.html"><strong>JP Morgan Chase</strong></a></h3><p>JPMorgan Chase &amp; Co. is an American multinational investment bank and financial services holding company headquartered in New York City.</p></li>
+<li><h3><a target="_blank" href="/company/visa/index.html"><strong>Visa</strong></a></h3><p>Visa is the world’s leader in digital payments. Visa's advanced global processing network, VisaNet, provides secure and reliable payments around the world and is capable of handling more than 65,000 transaction messages a second. The company’s relentless focus on innovation is a catalyst for the rapid growth of connected commerce on any device, and a driving force behind the dream of a cashless future for everyone, everywhere. As the world moves from analog to digital, Visa is applying our brand, products, people, network, and scale to reshape the future of commerce.</p></li>
+<li><h3><a target="_blank" href="/company/vmware/index.html"><strong>VMware</strong></a></h3><p>VMware is an American cloud computing and virtualization technology company that offers a breadth of digital solutions that powers apps, services, and experiences that enable organizations to deliver the best customer service and empower employees. VMware streamlines the journey for organizations to become digital businesses that deliver better experiences to their customers and empower employees to do their best work. Their software spans App Modernization, Cloud, Networking &amp; Security, and Digital Workspace.</p></li>
+<li><h3><a target="_blank" href="/company/yahoo/index.html"><strong>Yahoo</strong></a></h3><p>Yahoo is a global media and tech company that connects people to their passions. Yahoo reaches nearly 900 million people around the world, bringing them closer to what they love—from finance and sports to shopping, gaming, and news—with the trusted products, content, and tech that fuel their day. For partners, Yahoo provides a full-stack platform for businesses to amplify growth and drive more meaningful connections across advertising, search, and media.</p></li>
+<li><h3><a target="_blank" href="/company/verse-innovation/index.html"><strong>VerSe</strong></a></h3><p>VerSe Innovation’s proprietary technology platform powers 350 million + users to consume content in their local language on Dailyhunt. Their technology also powers India’s #1 and most engaging short video app Josh. With a substantial footprint in the value-added service ecosystem, VerSe broke new ground in the content and entertainment domain. This foray was augmented in large part owing to the company’s heavy investment in Artificial Intelligence and Machine Learning. Today, VerSe Innovation is a content technology platform company and India’s first tech unicorn focused on local languages.</p></li>
+<li><h3><a target="_blank" href="/company/slice/index.html"><strong>Slice</strong></a></h3><p>slice is a fintech startup focused on India’s youngsters aimed at building a smart, simple, and transparent financial platform to redesign the financial experience for the millennials. slice is backed by leading investors such as Tiger Global, Insight partners, Advent International, Blume Ventures, and Gunosy Capital.</p></li>
+<li><h3><a target="_blank" href="/company/vimeo/index.html"><strong>Vimeo</strong></a></h3><p>Vimeo is the world’s leading all-in-one video software solution. Vimeo's platform enables any professional, team, and organization to unlock the power of video to create, collaborate and communicate. Vimeo serves a growing community of over 230 million users, from creatives to entrepreneurs to the world’s largest companies.</p></li>
+<li><h3><a target="_blank" href="/company/cisco/index.html"><strong>Cisco</strong></a></h3><p>Cisco enables people to make powerful connections- whether in business, education, philanthropy, or creativity. Cisco hardware, software, and service offerings are used to create the Internet solutions that make networks possible--providing easy access to information anywhere, at any time.</p><p>Since the company's inception, Cisco engineers have been leaders in the development of Internet Protocol (IP)-based networking technologies. Today, with more than 71,000 employees worldwide, this tradition of innovation continues with industry-leading products and solutions in the company's core development areas of routing and switching, as well as in advanced technologies such as home networking, IP telephony, optical networking, security, storage area networking, and wireless technology. In addition to its products, Cisco provides a broad range of service offerings, including technical support and advanced services.</p></li>
+<li><h3><a target="_blank" href="/company/mastercard/index.html"><strong>Mastercard</strong></a></h3><p>Mastercard is a global technology company in the payments industry. Their mission is to connect and power an inclusive, digital economy that benefits everyone, everywhere by making transactions safe, simple, smart, and accessible. Using secure data and networks, partnerships, and passion, Mastercard's innovations and solutions help individuals, financial institutions, governments, and businesses realize their greatest potential. With connections across more than 210 countries and territories, Mastercard is building a sustainable world that unlocks priceless possibilities for all.</p></li>
+<li><h3><a target="_blank" href="/company/zynga/index.html"><strong>Zynga</strong></a></h3><p>Zynga is a leading developer of the world's most popular social games that are played by millions of people around the world each day. Zynga was founded as a project by Mark Pincus in January of 2007 to create a social poker game to launch on The Facebook platform, which opened to third-party developers in May of that year. Today, Zynga is one of the largest developers of mobile games in the West with more than 183 million monthly active users playing its mobile games.</p><p>Zynga was founded with the vision that play would become one of the core activities on the Internet. Zynga pioneered social games with the belief that if we could make games simple, accessible, and social the world would start playing.&nbsp;</p></li>
+<li><h3><a target="_blank" href="/company/nvidia/index.html"><strong>Nvidia</strong></a></h3><p>NVIDIA is an American multinational technology company. It designs graphics processing units (GPUs) for the gaming and professional markets, as well as system on chip units for the mobile computing and automotive market. NVIDIA pioneered accelerated computing to tackle challenges ordinary computers cannot. The breakthroughs they making at NVIDIA across different verticals are impacting businesses everywhere, helping them work faster, better, and smarter.</p></li>
+<li><h3><a target="_blank" href="/company/innovaccer/index.html"><strong>Innovaccer</strong></a></h3><p>Innovaccer is a leading healthcare data activation platform company focused on delivering more efficient and effective healthcare through the use of pioneering analytics and transparent, clean, and accurate data. Innvoaccer’s aim is to simplify complex data from all points of care, streamline the information, and help organizations make powerful decisions and realize strategic goals based on key insights and predictions from their data.&nbsp;</p><p>Their products have been deployed across more than 500 locations with over 10,000 providers leveraging it at institutions, governmental organizations, and several corporate enterprises such as Mercy ACO, StratiFi Health, Catalyst Health Network, Osler Health Network, and PHIX HIE.</p></li>
+<li><h3><a target="_blank" href="/company/sap-labs/index.html"><strong>SAP Labs</strong></a></h3><p>SAP is a German multinational software company that develops enterprise software to manage business operations and customer relations. SAP innovations help thousands of customers worldwide work together more efficiently and use business insight more effectively.</p><p>SAP is the market leader in enterprise application software, helping companies of all sizes and in all industries run at their best. Their machine learning, Internet of Things (IoT), and advanced analytics technologies help turn customers’ businesses into intelligent enterprises. SAP's end-to-end suite of applications and services enables their customers to operate profitably, adapt continuously, and make a difference.</p></li>
+<li><h3><a target="_blank" href="/company/mindtickle/index.html">Mindtickle</a></h3><p>Mindtickle is the market-leading sales readiness platform, helping revenue leaders at world-class companies like Johnson &amp; Johnson, Splunk, and Wipro, be ready to grow revenue by increasing knowledge, understanding ideal sales behaviors, and adapting to change.&nbsp;</p><p>Dozens of Fortune 500 and Forbes Global 2000 companies use Mindtickle to define excellence, build knowledge, align content, analyze performance, and optimize behavior throughout their sales organizations. Mindtickle is recognized as a market leader by top industry analysts and is ranked by G2 as both the #1 enterprise software product and #5 sales software product.</p></li>
+<li><h3><a target="_blank" href="/company/mongodb/index.html"><strong>MongoDB</strong></a></h3><p>MongoDB is a leading modern, general-purpose database platform, designed to unleash the power of software and data for developers and the applications they build. The MongoDB database platform has been downloaded over 210 million times and there have been more than 1.5 million registrations for MongoDB University courses.</p><p>The MongoDB community is transforming industries and empowering developers to build amazing apps that people use every day. MongoDB is a leading modern data platform and the first database provider to go public in 20 years.</p></li>
+</ol>
+<hr>
+<p>We have looked at the top 100 product-based companies in India [which has SDE roles available]. You can find best practices, interview preparation tips, and other awesome resources in our <a target="_blank" href="/resources/index.html">resources</a> section.</p></div></div></div></div><div class="blog-social"><div class="blog-social-list scroll-below-article has-like-feature"><div><div class="blog-social-icon blog-heart-icon-wrapper" role="button" tabindex="0"><div class="heart-icon"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Like"><path fill="currentColor" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path></svg></div></div><div class="blog-likes"></div></div><div><a href="https://api.whatsapp.com/send?phone=&amp;text=https%3A%2F%2Fworkat.tech%2Fgeneral%2Farticle%2Ftop-product-based-companies-in-india-7xgxclagorak" target="_blank" rel="noopener noreferrer" style="display: none; font-size: 18px;"><div class="blog-social-icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" class="svg-inline--fa fa-whatsapp " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="WhatsApp"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg></div></a><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://workat.tech/general/article/top-product-based-companies-in-india-7xgxclagorak" target="_blank" rel="noopener noreferrer"><div class="blog-social-icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="LinkedIn"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></div></a><a href="https://www.facebook.com/sharer/sharer.php?u=https://workat.tech/general/article/top-product-based-companies-in-india-7xgxclagorak" target="_blank" rel="noopener noreferrer"><div class="blog-social-icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" aria-label="Facebook"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></div></a><a href="https://twitter.com/intent/tweet?text=Top%20Product%20Based%20Companies%20in%20India%0A&amp;url=https://workat.tech/general/article/top-product-based-companies-in-india-7xgxclagorak&amp;hashtags=workattech" target="_blank" rel="noopener noreferrer"><div class="blog-social-icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Twitter"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></div></a></div></div></div></div><div class="article-section"><div class="blog-author-large-wrapper"><div class="blog-author-large-img"><img alt="Aravind Venugopal" src="https://lh3.googleusercontent.com/a-/AOh14GgemnKFtc5GuTvTKZAxaJe0wgMUSzXF5D2wH_TQ=s96-c"></div><div class="blog-author-large-desc"><div class="blog-author-large-name">Aravind Venugopal</div><div class="blog-author-large-text">Aravind is a program manager at workat.tech. He strives to make education much more accessible and effective with the help of communities.</div><div class="blog-author-large-social"><a href="https://www.linkedin.com/in/Aravind1444" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="LinkedIn"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a><a href="https://twitter.com/AravindV1444" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Twitter"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></div></div></div></div></div><div class="article-section related-articles"><div class="related-article-head">Related Content</div><div class="related-article-list"><a href="/general/article/get-a-software-engineering-job-1hw2juklol68/index.html"><div class="related-article-box"><div class="related-article-box-top"><div class="related-article-box-img"><img alt="" src="https://d2yjqys1j7uhg1.cloudfront.net/images/blogs/get-sde-job.jpg" class=" ls-is-cached lazyloaded" data-src="https://d2yjqys1j7uhg1.cloudfront.net/images/blogs/get-sde-job.jpg"></div></div><div class="related-article-box-bottom">Get a Software Engineering Job/Internship - Ultimate Guide</div></div></a><a href="/general/article/switch-service-based-companies-product-based-companies-ogtimx0i73bc/index.html"><div class="related-article-box"><div class="related-article-box-top"><div class="related-article-box-img"><img alt="" src="https://d2yjqys1j7uhg1.cloudfront.net/images/blogs/service-based-product-based.jpg" class=" ls-is-cached lazyloaded" data-src="https://d2yjqys1j7uhg1.cloudfront.net/images/blogs/service-based-product-based.jpg"></div></div><div class="related-article-box-bottom">How to switch from service-based companies to product-based companies? | Complete Roadmap</div></div></a><a href="/general/article/resume-cv-best-practices-klsvikpz8nd6/index.html"><div class="related-article-box"><div class="related-article-box-top"><div class="related-article-box-img"><img alt="" src="https://d2yjqys1j7uhg1.cloudfront.net/images/blogs/resume-cv-best-practices.jpg" class=" ls-is-cached lazyloaded" data-src="https://d2yjqys1j7uhg1.cloudfront.net/images/blogs/resume-cv-best-practices.jpg"></div></div><div class="related-article-box-bottom">Resume best practices for product-based companies | Latest Tips</div></div></a></div></div></div><div class="blog-extra-part"><div class="blog-extra-content blog-extra-content-fixed"><div class="article-extra-box" style=""><a href="/problem-solving/practice/index.html" target="_blank" rel="noopener noreferrer"><div class="article-extra-content"><div class="article-extra-img article-kickstart-img"><img alt="SDE Bootcamp - Become a software engineer at a product-based company" src="https://d2yjqys1j7uhg1.cloudfront.net/images/kickstart-program.svg" class=" ls-is-cached lazyloaded" data-src="https://d2yjqys1j7uhg1.cloudfront.net/images/kickstart-program.svg"></div><div class="article-extra-text">Practice Data Structures &amp; Algorithms</div></div></a></div><div class="article-extra-box article-compare-box"><a href="/resources/index.html"><div class="article-extra-content"><div class="article-extra-img article-compare-img"><img alt="Learning Resources" src="https://d2yjqys1j7uhg1.cloudfront.net/images/books.svg" class=" ls-is-cached lazyloaded" data-src="https://d2yjqys1j7uhg1.cloudfront.net/images/books.svg"></div><div class="article-extra-text">Interview Prep Resources</div></div></a></div><div class="article-extra-box" style=""><a class="article-extra-content" target="_blank" href="/discord/index.html"><div class="article-extra-img article-community-img"><img alt="Community" src="https://d2yjqys1j7uhg1.cloudfront.net/images/community.svg" class=" ls-is-cached lazyloaded" data-src="https://d2yjqys1j7uhg1.cloudfront.net/images/community.svg"></div><div class="article-extra-text">Join our community</div></a></div></div></div></div></div></div><div class="footer-wrapper"><div class="footer section"><div class="footer-main"><div class="footer-pages"><div class="footer-page"><a href="/about/index.html">About</a></div><div class="footer-page"><a href="/faq/index.html">FAQs</a></div><div class="footer-page"><a href="/terms/index.html">Terms</a></div><div class="footer-page"><a href="/privacy/index.html">Privacy</a></div></div><div class="footer-mail-cp"><div class="footer-email"><a href="mailto:hi@workat.tech"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path></svg><span>hi@workat.tech</span></a></div></div><div class="footer-social"><div class="footer-social-list"><div class="footer-social-item"><a href="/discord/index.html" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="svg-inline--fa fa-discord " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" aria-label="Discord"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg></a></div><div class="footer-social-item"><a href="https://www.linkedin.com/company/workat-tech" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="LinkedIn"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a></div><div class="footer-social-item"><a href="https://www.facebook.com/workat.tech" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" aria-label="Facebook"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a></div><div class="footer-social-item"><a href="https://twitter.com/intent/user?screen_name=workat_tech" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Twitter"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></div><div class="footer-social-item"><a href="https://github.com/workattech" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" aria-label="Github"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></div><div class="footer-social-item"><a href="https://instagram.com/workat.tech" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="Instagram"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a></div></div></div></div><div class="footer-links-section"><div class="footer-links-row"><div class="footer-links-column"><div class="footer-links-column-title">Blog</div><ul class="footer-links-item-list"><li class="footer-links-item"><a href="/general/index.html">Career Advice and Roadmaps</a></li><li class="footer-links-item"><a href="/problem-solving/index.html">Data Structures &amp; Algorithms</a></li><li class="footer-links-item"><a href="/machine-coding/index.html">Machine Coding Round (LLD)</a></li><li class="footer-links-item"><a href="/system-design/index.html">System Design &amp; Architecture</a></li><li class="footer-links-item"><a href="/backend-development/index.html">Backend Development</a></li><li class="footer-links-item"><a href="/frontend-development/index.html">Frontend Development</a></li><li class="footer-links-item"><a href="/project-ideas/index.html">Awesome Project Ideas</a></li><li class="footer-links-item"><a href="/core-cs/index.html">Core Computer Science</a></li></ul></div><div class="footer-links-column"><div class="footer-links-column-title">Practice Questions</div><ul class="footer-links-item-list"><li class="footer-links-item"><a href="/machine-coding/practice/index.html">Machine Coding (LLD) Questions</a></li><li class="footer-links-item"><a href="/system-design/practice/index.html">System Design (HLD) Questions</a></li><li class="footer-links-item"><a href="/problem-solving/practice/topics/index.html">Topic-wise DSA Questions</a></li><li class="footer-links-item"><a href="/problem-solving/practice/companies/index.html">Company-wise DSA Questions</a></li><li class="footer-links-item"><a href="/problem-solving/practice/lists/index.html">DSA Sheets (Curated Lists)</a></li><li class="footer-links-item"><a href="/frontend-development/article/top-javascript-interview-questions-answers-bt2553k4egca/index.html">JavaScript Interview Questions</a></li><li class="footer-links-item"><a href="/frontend-development/practice/index.html">Frontend UI Machine Coding Questions</a></li></ul></div><div class="footer-links-column"><div class="footer-links-column-title">Online Compilers (IDE)</div><ul class="footer-links-item-list"><li class="footer-links-item"><a href="/ide/online-java-compiler/index.html">Online Java Compiler</a></li><li class="footer-links-item"><a href="/ide/online-cpp-compiler/index.html">Online C++ Compiler</a></li><li class="footer-links-item"><a href="/ide/online-c-compiler/index.html">Online C Compiler</a></li><li class="footer-links-item"><a href="/ide/online-python-compiler/index.html">Online Python Compiler</a></li><li class="footer-links-item"><a href="/ide/online-javascript-compiler/index.html">Online JavaScript Compiler</a></li></ul></div></div><div class="footer-links-row"><div class="footer-links-column"><div class="footer-links-column-title">Topic-wise Problems</div><ul class="footer-links-item-list"><li class="footer-links-item"><a href="/problem-solving/topics/dynamic-programming/practice/index.html">Dynamic Programming Interview Questions</a></li><li class="footer-links-item"><a href="/problem-solving/topics/linked-lists/practice/index.html">Linked List Interview Questions</a></li><li class="footer-links-item"><a href="/problem-solving/topics/graphs/practice/index.html">Graph Interview Questions</a></li><li class="footer-links-item"><a href="/problem-solving/topics/backtracking/practice/index.html">Backtracking Interview Questions</a></li><li class="footer-links-item"><a href="/problem-solving/topics/arrays/practice/index.html">Arrays Interview Questions</a></li><li class="footer-links-item"><a href="/problem-solving/topics/binary-trees/practice/index.html">Trees Interview Questions</a></li></ul></div><div class="footer-links-column"><div class="footer-links-column-title">Company-wise Problems</div><ul class="footer-links-item-list"><li class="footer-links-item"><a href="/company/amazon/interview-questions/problem-solving/index.html">Amazon Interview Questions</a></li><li class="footer-links-item"><a href="/company/microsoft/interview-questions/problem-solving/index.html">Microsoft Interview Questions</a></li><li class="footer-links-item"><a href="/company/google/interview-questions/problem-solving/index.html">Google Interview Questions</a></li><li class="footer-links-item"><a href="/company/flipkart/interview-questions/problem-solving/index.html">Flipkart Interview Questions</a></li><li class="footer-links-item"><a href="/company/adobe/interview-questions/problem-solving/index.html">Adobe Interview Questions</a></li><li class="footer-links-item"><a href="/company/facebook/interview-questions/problem-solving/index.html">Facebook Interview Questions</a></li></ul></div><div class="footer-links-column"><div class="footer-links-column-title">DSA Sheets (Curated Lists)</div><ul class="footer-links-item-list"><li class="footer-links-item"><a href="/problem-solving/lists/top-interview-questions/practice/index.html">Top Interview Questions</a></li><li class="footer-links-item"><a href="/problem-solving/lists/faang-interview-questions/practice/index.html">FAANG Interview Questions</a></li><li class="footer-links-item"><a href="/problem-solving/lists/most-asked-questions/practice/index.html">Most Asked Interview Questions</a></li><li class="footer-links-item"><a href="/problem-solving/lists/six-month-dsa-practice-sheet/practice/index.html">6 month DSA Practice Sheet</a></li><li class="footer-links-item"><a href="/problem-solving/lists/three-month-dsa-practice-sheet/practice/index.html">3 month DSA Practice Sheet</a></li><li class="footer-links-item"><a href="/problem-solving/lists/one-week-dsa-practice-sheet/practice/index.html">Last minute DSA Practice Sheet</a></li></ul></div></div></div><div class="footer-copyright"><span class="footer-copyright-wat">© 2020-2022 WORKATTECH TECHNOLOGIES PVT LTD</span><span class="footer-copyright-divider">|</span><span class="footer-copyright-arr">ALL RIGHTS RESERVED</span></div></div></div></div></div><footer></footer></body></html>
